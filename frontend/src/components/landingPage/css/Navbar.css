@@ -1,0 +1,70 @@
+.navbar {
+    background: rgba(255, 255, 255, 0.959);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin-bottom: 5px;
+    box-shadow: 1px 1.2px 8px -7.9px #4a7aa3;;
+        
+
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px 0;
+    /* box-shadow: 0px 1px 0px 0.1px rgb(145, 145, 145); */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .MuiButtonBase-root {
+    border: 2px solid #08CE5C;
+}
+
+
+.container {
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    /* padding-right: 50px;
+    padding-left: 50px; */
+}
+
+.navbar-logo {
+    color: #3E3E3E;
+    justify-content: flex-start;
+    text-decoration: none;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.logo-img {
+    justify-content: start;
+    align-items: center;
+    width: 95px;
+    /* padding: 10px 20px; */
+
+}
+
+
+@media screen and (max-width:960px){
+    .NavbarItems {
+        position: relative;
+    }
+}
+
+.btn-links {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}

@@ -1,0 +1,19 @@
+{
+  "port": 3000,
+  "cloudant_url": "https://apikey-v2-wtzblsc4m64e6p7ux5y8rjxe2icuqninlv8gdok36iu:a86c87ebd58ff11a8826dccb85391943@937f7664-7415-4d7e-9884-e595280491d7-bluemix.cloudantnosqldb.appdomain.cloud",
+  "watson_discovery_apikey": "6nWhfmven5pT96L2Z54WNYFXZLVvVmk0LGx8AIeLbvkt",
+  "watson_discovery_iam_apikey_description": "Auto-generated for key 7674ca15-cdb4-4f08-ab64-acbd3cc82e60",
+  "watson_discovery_iam_apikey_name": "f57c662a-5ee8-431f-b4f8-5bede982d74d",
+  "watson_discovery_iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+  "watson_discovery_iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/42b87aeaf5014ba099d35a93dda4b65e::serviceid:ServiceId-4e3f9a2b-fe3d-421e-a08e-5f5add730a66",
+  "watson_discovery_url": "https://api.eu-de.discovery.watson.cloud.ibm.com/instances/8b20b9f3-0f4f-47cf-a83d-594e4e039fac",
+  "cloudant_apikey": "usnPTl7eGTnIy1Qw4n5wFkreZ286Mk8HRApehkJRx25Y",
+  "cloudant_host": "937f7664-7415-4d7e-9884-e595280491d7-bluemix.cloudantnosqldb.appdomain.cloud",
+  "cloudant_iam_apikey_description": "Auto-generated for key 30dbfcb0-2667-48b2-a6e0-b05274a2825b",
+  "cloudant_iam_apikey_name": "f57c662a-5ee8-431f-b4f8-5bede982d74d",
+  "cloudant_iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+  "cloudant_iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/42b87aeaf5014ba099d35a93dda4b65e::serviceid:ServiceId-bd8360a7-79ca-42ce-8fdf-e60f6f1b0746",
+  "cloudant_password": "a86c87ebd58ff11a8826dccb85391943",
+  "cloudant_port": 443,
+  "cloudant_username": "apikey-v2-wtzblsc4m64e6p7ux5y8rjxe2icuqninlv8gdok36iu"
+}

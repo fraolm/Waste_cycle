@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: default;
+}
+.home--bg {
+    padding: 60px 0;
+    margin-top: 15px;
+}
+.home--bg img> {
+    transform: rotate3d();
+}
+.home--hero-row {
+    align-items: center;
+}
+
+
+/* removes the top padding of the our mission page */
+.home-top {
+    padding: 20px 0px;
+    margin-top: 45px;
+    background-color: #0A81F8;
+}
+
+.underline-disable {
+    display: none;
+}
+
+/* changes color on the our mission statment */
+/* passed from the data js file */
+.bg-lightblue {
+    background-color: inherit;
+    color: white;
+    padding-top: 40px;
+    margin-top: 130px;
+    width: 100%;
+    /* height: 60vh; */
+    /* max-height: 60vh; */
+    margin-bottom: -20px;
+    
+}
+
+/* Slant for 'our mission' page */
+.home-top::before{
+    background-color: white;
+    right: 0;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    content: '';
+    margin-top: -20px;
+    z-index: 1;
+    transform: skewY(-5deg);
+    transform-origin: left;
+}
+
+
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: -15px;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.col {
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 1;
+    max-width: 50%;
+    flex-basis: 45%;
+
+}
+
+.home-top .row .col {
+    margin-bottom: auto;
+}
+/* adjusts the position of the text on the mission statment*/
+/* .col .ourMission{
+    margin-top: -190px;
+} */
+
+.home_hero-text-wrapper{
+    max-width: 520px;
+    padding-top: 0;
+    padding-bottom: 60px;
+}
+/* changes color (removed color black) on the second homesection object*/
+.header-modify {
+    margin-bottom: 24px;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.0;
+    color: white;
+    /* font-family: 'Roboto', sans-serif; */
+
+}
+.heading {
+    margin-bottom: 24px;
+    font-size: 56px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 550;
+    color: black;
+}
+.underline {
+    width: 160px;
+    height: 9px;
+    background-color: #0A81F8;
+    margin-bottom: -76px;
+    border-radius: 5px;
+}
+.home_hero-subtitle-modified{
+    max-width: 450px;
+    margin-bottom: 35px;
+    font-size: 17px;
+    font-weight: 420;
+    line-height: 24px;
+    color: white;
+}
+
+.disable-container {
+    display: none;
+}
+
+.home_hero-subtitle {
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size: 20px;
+    color: #3b3b3bd0;
+    line-height: 24px;
+}
+.home__hero-img-wrapper{
+    max-width: 500px;
+    margin-top: -90px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+ 
+}
+.home__hero-img{
+    max-width: 95%;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 15px;
+    padding-right: 0;
+}
+
+.home__hero-img-wrapper img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+
+}
+@media screen and (max-width: 991px){
+    /* .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    } */
+}
+@media screen and (max-width: 768){
+    .home_hero-text-wrapper{
+        padding-bottom: 65px;
+    }
+    .col {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}

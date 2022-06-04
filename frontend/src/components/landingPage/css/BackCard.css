@@ -1,0 +1,26 @@
+.backCard-container {
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 500px;
+    background-color: #0A81F9 ;
+    color: white;
+    display: flex;
+    border-radius: 20px;
+    /* flex-direction: row; */
+    /* box-shadow: 3px 4px 7px rgba(0, 0, 0,0.1); */
+    
+
+}
+
+.backCard-description{
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    max-width: 450px;
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+
+    margin-right: 15px;
+} 

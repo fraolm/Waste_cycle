@@ -1,0 +1,69 @@
+{
+  "name": "ibm-nodejs-cloudant-app",
+  "version": "1.0.0",
+  "description": "node.js + express + cloudant",
+  "config": {
+    "entrypoint": "server/server.js"
+  },
+  "scripts": {
+    "dev": "nodemon server/server.js",
+    "start": "nodemon --watch server server/server.js",
+    "check-coverage": "nyc report --check-coverage --lines 100",
+    "lint": "eslint --ignore-path .gitignore .",
+    "fix": "eslint --ignore-path .gitignore . --fix",
+    "test": "nyc mocha test --recursive --exit"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test && npm run check-coverage"
+    }
+  },
+  "nyc": {
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100,
+    "exclude": [
+      "test"
+    ],
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ]
+  },
+  "dependencies": {
+    "@cloudant/cloudant": "^4.4.0",
+    "@ibm-cloud/cloudant": "0.0.16",
+    "antd": "^4.16.8",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.0",
+    "fastify": "^3.19.0",
+    "fastify-static": "^4.2.2",
+    "helmet": "^4.6.0",
+    "ibm-cloud-env": "^0.2.7",
+    "ibm-watson": "^6.1.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^7.29.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "husky": "^6.0.0",
+    "mocha": "^9.0.1",
+    "mock-require": "^3.0.3",
+    "nodemon": "^2.0.9",
+    "nyc": "^15.1.0",
+    "sinon": "^11.1.1",
+    "sinon-chai": "^3.7.0",
+    "supertest": "^6.1.3"
+  }
+}

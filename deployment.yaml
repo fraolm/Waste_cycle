@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: wasteconnect-tr6
+  name: wasteconnect-tr6
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wasteconnect-tr6
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: wasteconnect-tr6
+    spec:
+      containers:
+      - image: winners
+        name: winners
+        ports:
+        - containerPort: 8080
+        resources: {}
+status: {}

@@ -1,0 +1,10 @@
+.GetStartedSection-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    /* background-color: rgb(231, 230, 230); */
+    background-image: linear-gradient(20deg,#dfc94d 10%, rgb(164, 247, 212));
+    color: white;
+    /* flex-direction: column; */
+    justify-content: center;
+}
